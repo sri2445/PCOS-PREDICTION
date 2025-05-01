@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.welcome-container {
+    background-color: #e0f7fa; /* Light background color for the card */
+    padding: 30px; /* Add some padding around the content */
+    border-radius: 10px; /* Slightly rounded corners for the card look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    width: 400px; /* Adjust width as needed */
+}
+
+.welcome-container h2 {
+    color: #333; /* Darker text for the heading */
+    margin-bottom: 20px;
+}
+
+.welcome-container button {
+    background-color: #008CBA; /* Blue button color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.form-container {
+    display: none;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin-top: 20px; /* Add some space between welcome and form */
+}
+
+/* Rest of your CSS for the form remains the same */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    width: 48%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.symptoms-group {
+    margin-top: 15px;
+    color: #555;
+}
+
+.symptoms-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.symptoms-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
